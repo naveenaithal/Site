@@ -1,0 +1,65 @@
+.thumbnails {
+  margin-right: -15px;
+}
+
+.thumbnails a {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.thumbnails img {
+margin-top:20px;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnails:hover img {
+  opacity: 0.6;
+  transform: scale(0.92);
+}
+
+.thumbnails:hover img:hover {
+  opacity: 1;
+  transform: scale(1) rotate(2deg);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .thumbnails a {
+    width: 50%;
+  }
+}
+
+
+.cert h1{
+text-align:center;
+margin-bottom:0;
+margin-left:80px;
+font-size:300%;
+
+}
+
+
+
+.ui-menu a{
+display:block;
+height:50px;
+width:50px;
+background-position:top-left;
+
+
+background-image:url(../images/sprites.png);
+text-indent:-99999;
+color:#FFF;
+background-repeat:no-repeat;
+margin-left:0;
+
+}
+.ui-home a:hover{
+background-position:-50px 0;
+}
