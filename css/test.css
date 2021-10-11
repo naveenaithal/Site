@@ -96,8 +96,32 @@ padding-top:20px;
 .site-nav a:hover {
   background-color: #450863;
   color:#fff;
-}/* Media query */
+}
 
+
+
+
+@keyframes  slideSpin{
+ 0% {transform:translateX(0%) scale(0.7)}
+
+
+  50% {transform:translateX(150%) scale(0.5);
+  }
+  75% {transform:translateX(150%) rotate(180deg) scale(0.7);}
+  100% {
+    transform: translateX(300%) rotate(180deg)  scale(0.7);
+  }
+}
+
+
+.star {
+  -webkit-animation: slideSpin 3s infinite alternate forwards;
+  animation: slideSpin 3s infinite alternate forwards;
+  width: 25%;
+
+  height: auto;
+}
+/* Media query */
 @media screen and (max-width:480px){
   .content-area{
   padding-top:20px;
@@ -161,25 +185,3 @@ padding-top:20px;
   }
   }
   
-
-
-@keyframes  slideSpin{
- 0% {transform:translateX(0%) scale(0.7)}
-
-
-  50% {transform:translateX(150%) scale(0.5);
-  }
-  75% {transform:translateX(150%) rotate(180deg) scale(0.7);}
-  100% {
-    transform: translateX(300%) rotate(180deg)  scale(0.7);
-  }
-}
-
-
-.star {
-  -webkit-animation: slideSpin 3s infinite alternate forwards;
-  animation: slideSpin 3s infinite alternate forwards;
-  width: 25%;
-
-  height: auto;
-}
