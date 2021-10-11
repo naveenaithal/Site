@@ -45,8 +45,7 @@ text-shadow:1px 1px 0px #000;
     margin-top: 20px;
     width: 225px;
     height: 225px;
-    border-radius: 50%; /* Modified*/
-    /*overflow:hidden;*/
+    border-radius: 50%;
     background-color: blue;
 }
 .container {
